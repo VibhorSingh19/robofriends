@@ -3,20 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Robo from './Robo';
-import Login from './Login';
+//import Login from './Login';
+import Cardlist from './Cardlist';
 import 'tachyons';
 import * as serviceWorker from './serviceWorker';
 import {Info} from './Info';
 ReactDOM.render(
   <React.StrictMode>
-    <div>
-    <Robo id={Info[0].id} name={Info[0].name} email={Info[0].email}/>
-    <Robo id={Info[1].id} name={Info[1].name} email={Info[1].email}/>
-    <Robo id={Info[2].id} name={Info[2].name} email={Info[2].email}/>
-    <Robo id={Info[3].id} name={Info[3].name} email={Info[3].email}/>
-    <Robo id={Info[4].id} name={Info[4].name} email={Info[4].email}/>
-    <Robo id={Info[5].id} name={Info[5].name} email={Info[5].email}/>
-    </div>
+    <Cardlist Info={Info}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
