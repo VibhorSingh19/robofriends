@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Robo from './Robo';
+import Login from './Login';
 import 'tachyons';
 import * as serviceWorker from './serviceWorker';
 
