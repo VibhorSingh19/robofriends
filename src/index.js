@@ -6,13 +6,13 @@ import Robo from './Robo';
 import Login from './Login';
 import 'tachyons';
 import * as serviceWorker from './serviceWorker';
-
+import {Info} from './Info';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-    <Robo />
-    <Robo />
-    <Robo />
+    <Robo id={Info[0].id} name={Info[0].name} email={Info[0].email}/>
+    <Robo id={Info[1].id} name={Info[1].name} email={Info[1].email}/>
+    <Robo id={Info[2].id} name={Info[2].name} email={Info[2].email}/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
