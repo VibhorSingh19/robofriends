@@ -1,16 +1,16 @@
 import React from 'react';
 import Robo from './Robo';
-function Cardlist({Info}) {
+function Cardlist({info}) {
   return (
     <div>
      {
-        Info.map((user,i)=>{
+        info.map((user,i)=>{
 
         return <Robo 
         key='i' 
-        id={Info[i].id} 
-        name={Info[i].name} 
-        email={Info[i].email}/>
+        id={info[i].id} 
+        name={info[i].name} 
+        email={info[i].email}/>
      })
     }
      </div>
