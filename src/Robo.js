@@ -5,7 +5,7 @@ function Robo({name,email,id}) {
     <header>
     
      <img src={`https://robohash.org/${id}?200x200`} Alt="robo"></img>
-     <h1>{name}</h1>
+     <h2>{name}</h2>
      <p>{email}</p>
     </header>
     </div>
